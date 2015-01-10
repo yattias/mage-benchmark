@@ -39,8 +39,8 @@ def bench_mage_db(host, username, password, db_name, customer_id, num_iterations
 			con.query("select * from customer_entity where entity_id=#{customer_id}")
 		end
 	end
-	con.close
 
+	con.close
 	b_sql.real
 end
 
